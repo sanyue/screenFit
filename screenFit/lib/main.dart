@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'screen_size_fit.dart';
+import 'extension/double_extension.dart';
+
 
 main() {
   runApp(MyApp());
@@ -38,8 +40,10 @@ class SYHomeContent extends StatelessWidget {
     print('px:${SYScreenSizeFit.px}');
     return Center(
       child: Container(
-        width: SYScreenSizeFit.setPx(200),
-        height: SYScreenSizeFit.setPx(200),
+        // width: SYScreenSizeFit.setPx(200),
+        // height: SYScreenSizeFit.setPx(200),
+        width: 200.0.px,
+        height: 200.0.px,
         color: Colors.red,
         alignment: Alignment.center,
         child: Text('屏幕适配',style: TextStyle(fontSize: SYScreenSizeFit.setPx(24),color: Colors.white),),
